@@ -4,11 +4,16 @@
 <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <!--<meta http-equiv="refresh" content="0.1;url=http://www.whiteg.cn">-->
 <title>梦白の小窝</title>
-  <script type="text/javascript" src="http://www.whiteg.cn/js/zzbaidu.js"></script>
-</head>
+ </head>
   <a id='text'>Hello World!</a>
   <br>
-  <a id='manjump'></a>
-  <script type="text/javascript" src="http://www.whiteg.cn/jump/jump-list"></script>
-  <script type="text/javascript" src="http://www.whiteg.cn/jump.js/"></script>
+  <a id='manjump'>错误:当前浏览器不支持JavaScript</a>
+  <script type="text/javascript">
+	var newurl='http://whiteg.cn/jump'+window.location.search;
+	var e=document.getElementById('manjump');
+	e.innerHTML='<a href='+newurl+'>'+newurl+'</a>';
+	e=document.getElementById('text');
+	e.innerText='请步移到';
+	window.location.href=newurl;
+  </script>
   </html>
